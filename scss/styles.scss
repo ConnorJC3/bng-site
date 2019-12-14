@@ -1,0 +1,11 @@
+@import "themes.scss";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$theme: $theme-1;
+
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+
