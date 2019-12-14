@@ -11,8 +11,8 @@ const NAV_LINKS = [
     path: "/"
   },
   {
-    label: "Roster",
-    path: "/team"
+    label: "Teams",
+    path: "/teams"
   },
   {
     label: <IconLink icon={faDiscord} name="Join Our Discord" />,

@@ -3,9 +3,51 @@
 
 $theme: $theme-1;
 
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-display: auto;
+  font-weight: 400;
+  src:
+    url('../public/fonts/PTSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-display: auto;
+  font-weight: 700;
+  src:
+    url('../public/fonts/PTSans-Bold.ttf') format('truetype');
+}
+
+body {
+  font-family: 'PT Sans' !important;
+}
+
 .navbar {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
+.banner {
+  position: relative;
+}
 
+.over-img {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  color: white;
+}
+
+.display-1 {
+  -webkit-text-stroke-width: 0.035em;
+  -webkit-text-stroke-color: black;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
