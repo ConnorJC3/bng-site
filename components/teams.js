@@ -102,11 +102,6 @@ const Teams = () => {
   ))
 
   return (
-    <>
-    <SiteNav links={NAV_LINKS} />
-    <Container className="text-center">
-      <h1 class="display-3">Our Team</h1>
-    </Container>
     <Container>
       <Row>
           <PoseGroup>
@@ -114,7 +109,6 @@ const Teams = () => {
           </PoseGroup>
       </Row>
     </Container>
-    </>
   )
 }
 

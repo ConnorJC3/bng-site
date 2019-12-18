@@ -8,8 +8,11 @@ const SiteNav = (props) => {
   const leftLinks = props.links.filter(link => !link.right).map(GenLink)
   const rightLinks = props.links.filter(link => link.right).map(GenLink)
 
+  let padding = props.paddingBottom ? "mb-3" : ""
+  padding = padding + " navbar-color navbar-dark"
+
   return (
-    <Navbar bg="light" expand="lg" className="mb-3">
+    <Navbar expand="lg" className={padding}>
       <Navbar.Brand href="#home">BNG</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

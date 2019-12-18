@@ -1,0 +1,17 @@
+
+@import "themes.scss";
+
+$theme: $theme-1;
+
+.badge-info {
+  background-color: map-get($theme, "accent") !important;
+}
+
+.card {
+  background-color: map-get($theme, "secondary") !important;
+  color: #fff !important;
+}
+
+.close {
+  color: #fff !important;
+}

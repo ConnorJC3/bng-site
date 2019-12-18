@@ -1,0 +1,53 @@
+@import "themes.scss";
+
+$theme: $theme-1;
+
+$base: map-get($theme, "accent");
+
+$twitter: #00aced;
+
+$youtube: #FF0000;
+
+.btn-primary {
+  background-color: $base !important;
+  border-color: adjust-color($base, $lightness: 3%) !important;
+  &:hover {
+    background-color: adjust-color($base, $lightness: 7%) !important;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem adjust-color($base, $lightness: 15%) !important;
+  }
+  &:active {
+    background-color: adjust-color($base, $lightness: -3%) !important;
+  }
+}
+
+.btn-twitter {
+  color: #fff !important; 
+  background-color: $twitter !important;
+  border-color: adjust-color($twitter, $lightness: 3%) !important;
+  &:hover {
+    background-color: adjust-color($twitter, $lightness: 7%) !important;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem adjust-color($twitter, $lightness: 15%) !important;
+  }
+  &:active {
+    background-color: adjust-color($twitter, $lightness: -3%) !important;
+  }
+}
+
+.btn-youtube {
+  color: #fff !important; 
+  background-color: $youtube !important;
+  border-color: adjust-color($youtube, $lightness: 3%) !important;
+  &:hover {
+    background-color: adjust-color($youtube, $lightness: 7%) !important;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem adjust-color($youtube, $lightness: 15%) !important;
+  }
+  &:active {
+    background-color: adjust-color($youtube, $lightness: -3%) !important;
+  }
+}

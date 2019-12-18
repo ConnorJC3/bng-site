@@ -7,14 +7,6 @@ const IconLink = (props) => (
 
 const NAV_LINKS = [
   {
-    label: "Home",
-    path: "/"
-  },
-  {
-    label: "Teams",
-    path: "/teams"
-  },
-  {
     label: <IconLink icon={faDiscord} name="Join Our Discord" />,
     path: "https://discord.gg/b3hajH3",
     right: true

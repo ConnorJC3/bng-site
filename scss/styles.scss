@@ -1,28 +1,52 @@
+@use "sass:map";
+
 @import "themes.scss";
+@import "roster.scss";
+@import "buttons.scss";
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 $theme: $theme-1;
 
 @font-face {
-  font-family: 'PT Sans';
+  font-family: 'Rubik';
   font-style: normal;
   font-display: auto;
   font-weight: 400;
   src:
-    url('../public/fonts/PTSans-Regular.ttf') format('truetype');
+    url('../public/fonts/Rubik-Regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'PT Sans';
+  font-family: 'Rubik';
+  font-style: italic;
+  font-display: auto;
+  font-weight: 400;
+  src:
+    url('../public/fonts/Rubik-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rubik';
   font-style: normal;
   font-display: auto;
   font-weight: 700;
   src:
-    url('../public/fonts/PTSans-Bold.ttf') format('truetype');
+    url('../public/fonts/Rubik-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-style: italic;
+  font-display: auto;
+  font-weight: 700;
+  src:
+    url('../public/fonts/Rubik-BoldItalic.ttf') format('truetype');
 }
 
 body {
-  font-family: 'PT Sans' !important;
+  font-family: 'Rubik' !important;
+  background-color: map-get($theme, "primary");
+  color: #fff !important;
 }
 
 .navbar {
@@ -32,19 +56,41 @@ body {
 
 .banner {
   position: relative;
+  width: 100%;
+}
+
+.navbar-color {
+  background-color: map-get($theme, "secondary");
+}
+
+.banner-gradient {
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(0deg, map-get($theme, "primary") 0%, rgba(255,255,255,0) 50%, map-get($theme, "secondary") 100%), url('../assets/images/banner.jpg');
+  width: 100vw;
+  height: 55vh;
+  background-size: cover;
 }
 
 .over-img {
   position: absolute;
-  top: 40%;
-  left: 0;
-  width: 100%;
+  bottom: 1em;
+  left: 1em;
+  width: calc(100% - 1em);
   color: white;
 }
 
-.display-1 {
-  -webkit-text-stroke-width: 0.035em;
-  -webkit-text-stroke-color: black;
+hr {
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+h1 {
+  margin-top: 0.5em;
+}
+
+.banner-text {
+  text-shadow: 2px 2px #000;
 }
 
 .img-fluid {
