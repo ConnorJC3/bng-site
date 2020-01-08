@@ -13,7 +13,7 @@ const SiteNav = (props) => {
 
   return (
     <Navbar expand="lg" className={padding}>
-      <Navbar.Brand href="#home">BNG</Navbar.Brand>
+      <Navbar.Brand href="#home">Broken Neck Gang</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">

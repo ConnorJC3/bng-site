@@ -60,14 +60,14 @@ body {
 }
 
 .navbar-color {
-  background-color: map-get($theme, "secondary");
+  background-color: map-get($theme, "primary");
 }
 
 .banner-gradient {
   background: rgb(0,0,0);
   background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 100%);
   background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 100%);
-  background: linear-gradient(0deg, map-get($theme, "primary") 0%, rgba(255,255,255,0) 50%, map-get($theme, "secondary") 100%), url('../assets/images/banner.jpg');
+  background: linear-gradient(0deg, map-get($theme, "primary") 0%, rgba(255,255,255,0) 50%, map-get($theme, "primary") 100%), url('../assets/images/banner.jpg');
   width: 100vw;
   height: 55vh;
   background-size: cover;

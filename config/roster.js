@@ -33,6 +33,15 @@ const ROSTER = [
     youtube: "https://www.youtube.com/user/ThePacosTaco",
     image: require('../assets/images/roster/paco.jpg'),
     bio: `Paco got into smash initially during Smash 4's release, but left temporarily due to not having access to the game. Paco then returned to the scene around Ultimate's release and has been going strong ever since. He also likes commentating. He's excited to be a part of BNG and bring many opportunities to the table.`
+  },
+  {
+    name: "Emerald",
+    realName: "Tom Green",
+    mains: ["Piranha Plant"],
+    twitter: "https://twitter.com/SSB_Emerald",
+    twitch: "https://www.twitch.tv/SSB_Emerald",
+    image: require('../assets/images/roster/emerald.jpg'),
+    bio: `Like many, Tom defines Smash as a passion more than just a game. Whether it’s through competing, commentating or just casual play, he is always fully engaged in the Smash experience. Originally from Indiana, Tom has immersed himself in the Smash community and looks forward to what he and BNG can do together. A proud member of the Plant Ganga, Tom is not afraid to share his opinions on the character with anyone who will listen.`
   }
 ]
 
