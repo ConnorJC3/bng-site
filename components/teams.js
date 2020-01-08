@@ -2,7 +2,7 @@ import "../scss/styles.scss"
 
 import { Container, Card, Col, Row, Badge, Nav, Button } from 'react-bootstrap'
 
-import { SiteNav } from '../components'
+import { SiteNav } from '.'
 import { NAV_LINKS, ROSTER } from '../config'
 import { useState } from "react"
 import posed, { PoseGroup } from 'react-pose'
