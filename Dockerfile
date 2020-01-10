@@ -5,8 +5,6 @@ WORKDIR /app
 
 ENV NODE_ENV production
 
-RUN npm install -g yarn
-
 ADD package.json . 
 
 ADD yarn.lock . 
