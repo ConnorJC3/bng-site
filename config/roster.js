@@ -1,14 +1,6 @@
 
 const ROSTER = [
   {
-    name: "ßobban",
-    realName: "Samuel",
-    mains: ["Piranha Plant", "Bowser"],
-    twitter: "https://twitter.com/LegendOfBobban",
-    image: require('../assets/images/roster/bobban.jpg'),
-    bio: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non mi quis nulla eleifend pharetra. Pellentesque nec sodales augue, a fringilla ex. Maecenas vel velit lacinia, tristique magna feugiat, consectetur neque. Pellentesque dignissim tellus non lectus eleifend, vel vulputate mi feugiat. Aliquam erat volutpat. Aliquam ultrices, purus quis rutrum egestas, nisi arcu aliquet nisl, id feugiat felis nulla eget mauris. Nulla aliquam neque vitae rhoncus dapibus. Donec in sodales est. Maecenas lacus nunc, aliquet eu nisi a, congue ullamcorper ipsum. Donec rhoncus massa non elit tincidunt elementum. Fusce gravida, ipsum nec lobortis vulputate, eros dui lacinia ipsum, ac laoreet metus. `
-  },
-  {
     name: "Rudra",
     realName: "Lance",
     mains: ["Shulk", "Toon Link"],
@@ -42,6 +34,13 @@ const ROSTER = [
     twitch: "https://www.twitch.tv/SSB_Emerald",
     image: require('../assets/images/roster/emerald.jpg'),
     bio: `Like many, Tom defines Smash as a passion more than just a game. Whether it’s through competing, commentating or just casual play, he is always fully engaged in the Smash experience. Originally from Indiana, Tom has immersed himself in the Smash community and looks forward to what he and BNG can do together. A proud member of the Plant Ganga, Tom is not afraid to share his opinions on the character with anyone who will listen.`
+  },
+  {
+    name: "Frog",
+    realName: "Jared",
+    mains: ["Palutena", "Ganondorf"],
+    image: require('../assets/images/roster/frog.jpg'),
+    bio: `My first experience with smash was as a casual Marth main back in brawl. Unlike most ultimate players, I have never played smash 4. For a few years I didn’t play smash at all, and I only got back into it after starting to play brawl again with Bobban about a year ago. Since ultimate’s release I have begun taking smash a bit more seriously and hope to improve in the upcoming season. `
   }
 ]
 
