@@ -31,20 +31,11 @@ const App = () => {
       <Button variant="primary" href="https://discord.gg/b3hajH3" target="_blank" rel="noreferrer" className="mr-2"><FontAwesomeIcon icon={faDiscord} className="mr-2" />Join our Discord</Button>
       <Button variant="secondary" href="https://forms.gle/wTzxLnhbhwYepZMP7" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faScroll} className="mr-2" />Join the Team</Button>
       <h1>Our Socials</h1>
+      <Container>
       <Row>
-        <Col xs={12} md={6}>
-          <TwitterTimelineEmbed
-            sourceType="profile"
-            screenName="BrokenNeckGang"
-            options={{dataTheme: 'dark', height: '50vh'}}
-          />
-        </Col>
-        <Col xs={12} md={6}>
-          <Container>
-            {MappedSocialButtons}
-          </Container>
-        </Col>
+        {MappedSocialButtons}
       </Row>
+      </Container>
       <h1>Our Members</h1>
     </Container>
     <Teams />

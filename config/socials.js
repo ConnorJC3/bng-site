@@ -1,6 +1,6 @@
 import { faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { Button } from "react-bootstrap"
+import { Button, Col } from "react-bootstrap"
 
 const SOCIALS = [
   {
@@ -19,9 +19,11 @@ const SOCIALS = [
 ]
 
 export const MappedSocialButtons =  SOCIALS.map((social, key) => (
-    <Button block key={key} variant={social.variant} href={social.link} target="_blank" rel="noreferrer">
+  <Col xs={12} sm={6}>
+    <Button block key={key} size="lg" variant={social.variant} href={social.link} target="_blank" rel="noreferrer">
       <FontAwesomeIcon icon={social.icon} className="mr-2" />
       {social.text}
     </Button>
+  </Col>
   )
 )
