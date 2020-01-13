@@ -10,6 +10,8 @@ class Doc extends Document {
     return (
       <Html lang="en">
         <Head>
+          <meta charSet="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
           <meta name="Description" content="BNG is Gainesville's Fastest Growing Esports Team" />
         </Head>
         <body>
