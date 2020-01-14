@@ -12,6 +12,7 @@ const ROSTER = [
   },
   {
     name: "Sigma",
+    realName: "Jordan",
     mains: ["Joker", "Ganondorf"],
     twitter: "https://twitter.com/BNG_Sigma",
     image: require('../assets/images/roster/jordan.jpg'),
@@ -28,7 +29,7 @@ const ROSTER = [
   },
   {
     name: "Emerald",
-    realName: "Tom Green",
+    realName: "Tom",
     mains: ["Piranha Plant"],
     twitter: "https://twitter.com/SSB_Emerald",
     twitch: "https://www.twitch.tv/SSB_Emerald",
@@ -41,6 +42,14 @@ const ROSTER = [
     mains: ["Palutena", "Ganondorf"],
     image: require('../assets/images/roster/frog.jpg'),
     bio: `My first experience with smash was as a casual Marth main back in brawl. Unlike most ultimate players, I have never played smash 4. For a few years I didn’t play smash at all, and I only got back into it after starting to play brawl again with Bobban about a year ago. Since ultimate’s release I have begun taking smash a bit more seriously and hope to improve in the upcoming season. `
+  },
+  {
+    name: "Bobban",
+    realName: "Samuel",
+    mains: ["Bowser"],
+    twitter: "https://twitter.com/legendofbobban",
+    image: require('../assets/images/roster/bobban.jpg'),
+    bio: `Starting his competitive journey with the release of Ultimate, Bobban has been maining Bowser since month one and steadily improving ever since.  Today, Bobban is the leading Bowser main in Gainesville and looks forward to seeing how far he and BNG can go together.`
   }
 ]
 

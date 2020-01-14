@@ -63,6 +63,10 @@ body {
   background-color: map-get($theme, "primary");
 }
 
+.footer-color {
+  background-color: map-get($theme, "secondary");
+}
+
 .banner-gradient {
   background: rgb(0,0,0);
   background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 100%);
