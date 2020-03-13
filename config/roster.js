@@ -50,7 +50,23 @@ const ROSTER = [
     twitter: "https://twitter.com/legendofbobban",
     image: require('../assets/images/roster/bobban.jpg'),
     bio: `Starting his competitive journey with the release of Ultimate, Bobban has been maining Bowser since month one and steadily improving ever since.  Today, Bobban is the leading Bowser main in Gainesville and looks forward to seeing how far he and BNG can go together.`
-  }
+  },
+  {
+    name: "Stiles",
+    realName: "Christopher",
+    mains: ["Pac-Man", "Ness"],
+    twitter: "https://twitter.com/stiles_ssb",
+    image: require('../assets/images/roster/stiles.jpg'),
+    bio: `Stiles was introduced to smash with the release of Ultimate, and began attending tournaments during his first semester at UF. His main goal is to have fun as he continues to improve as a competitor for BNG.`
+  },
+  {
+    name: "Quarter Circle",
+    realName: "Luke",
+    mains: ["Ken", "Young Link", "Pokemon Trainer", "Terry"],
+    twitter: "https://twitter.com/DobbsCommaLuke",
+    image: require('../assets/images/roster/luke.jpg'),
+    bio: `The first video game Luke ever played at the age of four was Melee. Ever since then he has wanted to play esports at a competitive level and eventually find a nonplayer career in esports. He enjoys both playing and hosting tournaments. Luke joined BNG to improve as a player, spend more time practicing with skilled friends, and hopefully help make a name for himself along the way.`
+  },
 ]
 
 export default ROSTER
