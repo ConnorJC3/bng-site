@@ -28,8 +28,6 @@ const App = () => {
     <Container>
       <h1>For the love of the game,</h1>
       <p>Broken Neck Gang was founded on the principle of creating a community for passionate players.</p>
-      <Button variant="primary" href="https://discord.gg/b3hajH3" target="_blank" rel="noreferrer" className="mr-2"><FontAwesomeIcon icon={faDiscord} className="mr-2" />Join our Discord</Button>
-      <Button variant="secondary" href="https://forms.gle/wTzxLnhbhwYepZMP7" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faScroll} className="mr-2" />Join the Team</Button>
       <h1>Our Socials</h1>
       <Container>
       <Row>
