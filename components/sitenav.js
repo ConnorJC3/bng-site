@@ -1,4 +1,5 @@
 import { Navbar, Nav } from 'react-bootstrap'
+import logo from '../assets/bng_logo.png'
 
 const GenLink = (link, key) => (
   <Nav.Link key={key} href={link.path}>{link.label}</Nav.Link>
@@ -13,7 +14,7 @@ const SiteNav = (props) => {
 
   return (
     <Navbar expand="lg" className={padding}>
-      <Navbar.Brand href="#home">Broken Neck Gang</Navbar.Brand>
+      <Navbar.Brand href="#home"><img className="navbar-logo" src={logo} /></Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
