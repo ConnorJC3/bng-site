@@ -1,4 +1,4 @@
-FROM node:erbium as builder
+FROM docker.io/node:erbium as builder
 
 WORKDIR /app
 
@@ -16,7 +16,7 @@ RUN yarn build
 
 RUN yarn export
 
-FROM nginx-unprivileged:1.19-alpine
+FROM docker.io/nginxinc/nginx-unprivileged:1.19-alpine
 
 COPY --from=builder /app/nginx.conf /etc/nginx/nginx.conf
 
