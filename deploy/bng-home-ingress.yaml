@@ -45,5 +45,5 @@ spec:
   - www.brokenneckgang.com
   privateKey:
     rotationPolicy: Always
-    algorithm: ecdsa
+    algorithm: ECDSA
     size: 521
