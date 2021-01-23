@@ -23,6 +23,8 @@ spec:
         app: bng-home
         service: web
     spec:
+      securityContext:
+        runAsUser: 1000
       containers:
         - name: home
           image: quay.io/christopherjmiller/bng-home:1.1.3
