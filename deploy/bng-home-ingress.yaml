@@ -49,6 +49,7 @@ spec:
     name: letsencrypt-staging
   commonName: brokenneckgang.com
   dnsNames:
+  - brokenneckgang.com
   - www.brokenneckgang.com
   privateKey:
     rotationPolicy: Always
