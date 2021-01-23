@@ -28,7 +28,7 @@ spec:
         runAsGroup: 101
       containers:
         - name: home
-          image: quay.io/christopherjmiller/bng-home:1.3.2
+          image: quay.io/christopherjmiller/bng-home:1.3.3
           ports:
             - containerPort: 8080
               protocol: TCP
