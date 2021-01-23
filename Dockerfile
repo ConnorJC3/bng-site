@@ -2,7 +2,6 @@ FROM node:erbium as builder
 
 WORKDIR /app
 
-
 ENV NODE_ENV production
 
 ADD package.json . 
@@ -17,7 +16,7 @@ RUN yarn build
 
 RUN yarn export
 
-FROM nginx:1.17.5-alpine
+FROM nginx-unprivileged:1.19-alpine
 
 COPY --from=builder /app/nginx.conf /etc/nginx/nginx.conf
 

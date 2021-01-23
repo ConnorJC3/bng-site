@@ -7,8 +7,8 @@ metadata:
     app: bng-home
     service: web
 spec:
-  replicas: 2
-  revisionHistoryLimit: 2
+  replicas: 1
+  revisionHistoryLimit: 1
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -24,17 +24,18 @@ spec:
         service: web
     spec:
       securityContext:
-        runAsUser: 1000
+        runAsUser: 101
+        runAsGroup: 101
       containers:
         - name: home
           image: quay.io/christopherjmiller/bng-home:1.1.3
           ports:
-            - containerPort: 80
+            - containerPort: 8080
               protocol: TCP
           livenessProbe:
             httpGet:
               path: /health
-              port: 80
+              port: 8080
             initialDelaySeconds: 3
             periodSeconds: 3
           lifecycle:
@@ -52,7 +53,7 @@ metadata:
 spec:
   ports:
     - port: 80
-      targetPort: 80
+      targetPort: 8080
       protocol: TCP
       name: http
   selector:
