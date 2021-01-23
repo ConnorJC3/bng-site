@@ -21,15 +21,19 @@ spec:
         paths:
           - path: /
             backend:
-              serviceName: bng-home
-              servicePort: 80
+              service:
+                name: bng-home
+                port:
+                  number: 80
     - host: www.brokenneckgang.com
       http:
         paths:
           - path: /
             backend:
-              serviceName: bng-home
-              servicePort: 80
+              service:
+                name: bng-home
+                port:
+                  number: 80
 ---
 apiVersion: cert-manager.io/v1
 kind: Certificate
