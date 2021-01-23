@@ -55,37 +55,3 @@ spec:
       name: http
   selector:
     app: bng-home
----
-apiVersion: networking.k8s.io/v1beta1
-kind: Ingress
-metadata:
-  name: bng-home
-  namespace: christopherjmiller
-  labels:
-    service: web
-  annotations:
-    kubernetes.io/ingress.class: "nginx"
-    cert-manager.io/cluster-issuer: "letsencrypt-prod"
-    nginx.ingress.kubernetes.io/configuration-snippet: |
-      more_set_headers "Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; font-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; navigate-to https:; block-all-mixed-content";
-spec:
-  tls:
-    - hosts:
-        - brokenneckgang.com
-        - www.brokenneckgang.com
-      secretName: bng-home-tls
-  rules:
-    - host: brokenneckgang.com
-      http:
-        paths:
-          - path: /
-            backend:
-              serviceName: bng-home
-              servicePort: 80
-    - host: www.brokenneckgang.com
-      http:
-        paths:
-          - path: /
-            backend:
-              serviceName: bng-home
-              servicePort: 80

@@ -1,0 +1,3 @@
+resources:
+  - bng-home.yml
+  - bng-home-ingress.yml
