@@ -45,6 +45,7 @@ metadata:
 spec:
   secretName: bng-home-tls
   issuerRef:
+    kind: ClusterIssuer
     name: letsencrypt-staging
   commonName: brokenneckgang.com
   dnsNames:
