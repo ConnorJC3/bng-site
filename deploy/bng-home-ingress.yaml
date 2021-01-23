@@ -54,4 +54,4 @@ spec:
   privateKey:
     rotationPolicy: Always
     algorithm: ECDSA
-    size: 521
+    size: 384
